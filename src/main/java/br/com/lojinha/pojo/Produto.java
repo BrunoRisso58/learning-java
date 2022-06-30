@@ -7,7 +7,7 @@ import java.util.List;
 public class Produto {
     private String nome;
     private String marca;
-    private double valor;
+    protected double valor;
     private Tamanho tamanho;
 
     private List<Item> itensAdicionais;
@@ -53,7 +53,6 @@ public class Produto {
     public void setTamanho(Tamanho novoTamanho) {
         this.tamanho = novoTamanho;
     }
-
 
     public List<Item> getItensAdicionais() {
         return itensAdicionais;
